@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bottlerocket">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app/styles/style.css">
+    <title>Bottle Rocket</title>
+</head>
+
+<body>
+    <navbar></navbar>
+    <div ui-view></div>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/scripts/route.js"></script>
+    <script src="app/directives/navbar/navbar.directive.js"></script>
+    <script src="app/filters/kebabcase.filter.js"></script>
+    <script src="app/partials/home/home.controller.js"></script>
+    <script src="app/partials/category/category.controller.js"></script>
+    <script src="app/partials/restaurant/restaurant.controller.js"></script>
+    <script src="app/services/restaurants.service.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH8TDjGdTkvR1u7uX9KxnDpdhxMav45JY&callback=initMap" type="text/javascript"></script>
+    <div id="map"></div>
+    <script>
+    function initMap() {
+
+    }
+    </script>
+</body>
+
+</html>

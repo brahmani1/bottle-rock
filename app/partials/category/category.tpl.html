@@ -1,0 +1,15 @@
+<div class="container ">
+    <div class="row category-grid">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-4" ng-repeat="restaurant in category.restaurants" ui-sref="restaurant({category_alias:restaurant.category_alias, restaurant_alias:restaurant.restaurant_alias})">
+            <div class="card">
+                <div class="card-body">
+                    <img ng-src="{{restaurant.backgroundImageURL}}" alt="" class="restaurant-bg-image">
+                </div>
+                <div class="card-footer">
+                    <h4 class="restaurant-title">{{restaurant.name}}</h4>
+                    <h5 class="restaurant-category">{{restaurant.category}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
